@@ -1,0 +1,135 @@
+Java Primitives
+    Group of types that don´t use keywords when initialized
+    - numeric: 
+        ° intgral: byte, short, int, long
+        ° floating point: float, double
+    - non numeric:
+        ° char
+        ° boolean
+    
+    Characteristics:
+        automatic variables(not references)  
+        stored in stack (primitive and references) 
+        dont use keyword "new" to declare
+        recieve literals as assignments
+
+Strings
+    Object that contains a sequence of characters
+
+    Characteristics:
+        dont need "new" keyword
+        immutable 
+        once instanciated cannot be changed
+
+    Methods:
+        to compare two strings 
+            - .equals() : returns bool
+            - .compareTo() : returns int (<0 smaller, 0 equal, >0 larger)
+
+    Notes:
+        == , compares the reference and not the value of the strings
+
+
+Logical and Realtional Operators
+    Relational:
+        > , greater than
+        >= , greater than or equal to
+        < , less than
+        <= , less than or equal to
+        == , equal to
+        != , not equal to
+
+    Logical:
+        && , and
+        || , or
+        ! , not
+
+
+
+
+Program Control
+    - if-else statement
+    - while, do-while loop
+    - for loop
+
+
+Arrays [] {} :
+    colection of values of the same data type stored in a container Object
+    its lenght is set when it is initialized
+
+
+Object Classes
+    Are classes that define objects to be used in a driver class
+
+    instance fields:
+        variable declared within the class, onde cada objeto da classe terá um valor para essa variavel
+        declared within the clas but outside any Method
+        should be private and accessed trough a getter Method
+
+    access modifiers:
+        - public: allows access from aniwhere
+        - protected: allows access only inside the package containing the modifier 
+        - private: allows access only from inside the same class
+        - default (blank): access any class of the same package
+
+Constructor and Method Overloading
+
+    Constructors:
+        method that creates an object
+        invoked using the "new" keyword
+        more than one constructor can be created in a class as long as they have different signatures
+        must include the parameter list of the constructor
+
+        overloading constructors:
+            having more than one constructor with the same name
+            difference would be on the arguments: number of, data types ...
+
+            parameters:
+                used to initialize fields to values other than the default values
+
+    Method structure:
+        - signature: name + parameters
+        - return type: what type of obect or if any will be returned
+    
+        class methodds:
+            - accessor method: returns value of specific instance variable
+            - mutator method: changes the value of a specific indtance variable
+            - functional method: preforms a functionality for the class
+        
+        overloading methods:
+            the methods must have a different number, type, order .. of parameters
+
+        main method:
+            to run a java program you must define a main method in a driver class
+            is autoamtically called when the class is called
+
+
+Inheritance
+    super X sub classes:
+        classes can derive or evolve form parent classes, 
+        they contain the same methods and fields as their parents but are a more specialized form of their parent classes
+        - superclass: more genrical, other classes use their methods and data
+        - subclass: more specific, that derives or inherits from another class
+
+        "extends" keyword:
+            class you want to inherit from by using the key word extends
+            allows  you to designate the super class 
+
+    inheritance:
+        subclasses inherit from superclass
+        superclasses cant inherit from their subclasses
+        in java it can only extend one class
+
+    object:
+        every superclass implicitly extends the class object
+        is considered the highest and most general component of any hierarchy
+
+    encapsulation:
+        to enclose into a capsule, 
+        - private: hidden from the usser of the object
+        - public: methods can provide access to data but implementation is hidden
+        - encapsulating: prevents data from being modified
+        
+
+
+
